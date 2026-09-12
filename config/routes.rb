@@ -1,14 +1,9 @@
 Rails.application.routes.draw do
-  get "books/new"
-  post 'books' => 'books#create'  
 
-  get 'books' => 'books#index'
-   get 'books/:id' => 'books#show', as: 'book'
-
-  get "books/edit"
-  
   get '/top' => 'homes#top'
   root "homes#top"
+
+  resources :books
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

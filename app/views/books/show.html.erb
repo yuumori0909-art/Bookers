@@ -1,5 +1,21 @@
-  <p>本のタイトル</p>
-  <span><%= @book.title %></span>
+<div>
+  <%= flash[:notice] %>
+</div>  
+
+<table>
+  <p>
+    <span>Title:</span>
+    <span><%= @book.title %></span>
+  </p>
   
-  <p>感想</p>
-  <span><%= @book.body %></span>
+  <p>
+    <span>Body:</span>
+    <span><%= @book.body %></span>
+  </p>
+
+</table>
+ <div>
+ <%= link_to "edit", edit_book_path(@book.id) %>
+  |
+ <a href="/books">Back</a>
+ </div>
