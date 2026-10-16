@@ -63,4 +63,4 @@ group :test do
   gem 'factory_bot_rails'
   gem 'faker'
 end
-gem "json", "< 3.0"
+gem "json", "< 4.0"
